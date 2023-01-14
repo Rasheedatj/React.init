@@ -1,0 +1,50 @@
+:root {
+  --orange: hsl(26, 100%, 55%);
+  --paleOrange: hsl(25, 100%, 94%);
+  --VeryDarkBlue: hsl(220, 13%, 13%);
+  --darkGrayishBlue: hsl(219, 9%, 45%);
+  --grayishBlue: hsl(220, 14%, 75%);
+  --LightGrayishBlue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--darkGrayishBlue);
+  color: var(--darkGrayishBlue);
+}
+.logo {
+  width: 15%;
+}
+
+nav {
+  width: 65%;
+  display: flex;
+  gap: 3rem;
+  height: 82px;
+}
+
+nav li {
+  list-style: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 82px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart_avatar {
+  width: 20%;
+  height: 30px;
+  display: flex;
+  gap: 2rem;
+  justify-content: end;
+}
+
+nav li:hover {
+  border-bottom: 3px solid var(--orange);
+}

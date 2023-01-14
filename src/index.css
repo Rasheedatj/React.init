@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --orange: hsl(26, 100%, 55%);
+  --paleOrange: hsl(25, 100%, 94%);
+  --VeryDarkBlue: hsl(220, 13%, 13%);
+  --darkGrayishBlue: hsl(219, 9%, 45%);
+  --grayishBlue: hsl(220, 14%, 75%);
+  --LightGrayishBlue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  padding: 2rem 6rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 3rem;
+}
+
+.display-image {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+.display-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sub-images {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sub-images .img-other,
+.sub-images .bordered-img {
+  width: 23%;
+  position: relative;
+  cursor: pointer;
+}
+
+.sub-images .img-other::after {
+  position: absolute;
+  content: "";
+  background-color: var(--LightGrayishBlue);
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.4;
+  display: none;
+}
+
+.sub-images .img-other:hover::after {
+  display: block;
+}
+
+.sub-images .bordered-img {
+  position: relative;
+}
+
+.sub-images .bordered-img img {
+  border: 2px solid var(--orange);
+}
+
+.sub-images .bordered-img::after {
+  position: absolute;
+  content: "";
+  background-color: var(--LightGrayishBlue);
+  inset: 0;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.description {
+  width: 50%;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+  font-size: 50px;
+  padding-top: 1.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.about {
+  color: var(--darkGrayishBlue);
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 1.3rem;
+}
+
+.flex-price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 12px;
+}
+
+.dollar {
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+  font-size: 25px;
+}
+
+.percentage-off {
+  color: var(--orange);
+  background-color: var(--paleOrange);
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: var(--grayishBlue);
+  text-decoration: line-through;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 420px) {
+}

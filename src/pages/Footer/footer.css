@@ -49,3 +49,17 @@ button:hover {
 button p {
   font-size: 17px;
 }
+
+@media screen and (max-width: 420px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .counter {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

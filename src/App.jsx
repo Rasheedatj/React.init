@@ -1,5 +1,4 @@
 import { useState } from "react";
-import logo from "./assets/react.svg";
 import Footer from "./pages/Footer/footer";
 import Header from "./pages/Header/header";
 import shoeOne from "./pages/images/image-product-1.jpg";
@@ -7,6 +6,7 @@ import sub_1 from "./pages/images/image-product-1-thumbnail.jpg";
 import sub_2 from "./pages/images/image-product-4-thumbnail.jpg";
 import sub_3 from "./pages/images/image-product-3-thumbnail.jpg";
 import sub_4 from "./pages/images/image-product-4-thumbnail.jpg";
+import LightGallery from "lightgallery/react";
 import "./App.css";
 
 function App() {
@@ -22,18 +22,29 @@ function App() {
           <img src={shoeOne} alt="" />
 
           <div className="sub-images">
-            <div className="bordered-img">
-              <img src={sub_1} alt="" />
-            </div>
-            <div className="img-other">
-              <img src={sub_2} alt="" />
-            </div>
-            <div className="img-other">
-              <img src={sub_3} alt="" />
-            </div>
-            <div className="img-other">
-              <img src={sub_4} alt="" />
-            </div>
+            <a href={sub_1} className="bordered-img box">
+              <div>
+                <img src={sub_1} alt="" />
+              </div>
+            </a>
+
+            <a href={sub_2} className="img-other box">
+              <div>
+                <img src={sub_2} alt="" />
+              </div>
+            </a>
+
+            <a href={sub_3} className="img-other box">
+              <div>
+                <img src={sub_3} alt="" />
+              </div>
+            </a>
+
+            <a href={sub_4} className="img-other box">
+              <div>
+                <img src={sub_4} alt="" />
+              </div>
+            </a>
           </div>
         </div>
 

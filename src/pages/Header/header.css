@@ -134,7 +134,7 @@ nav li:hover {
   width: 220px;
   height: 25vh;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  animation: cart 500ms ease-in-out;
+  animation: cart 300ms ease-in-out;
   z-index: 2;
 }
 

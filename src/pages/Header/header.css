@@ -128,7 +128,7 @@ nav li:hover {
 }
 .cart-modal {
   position: absolute;
-  top: 18%;
+  top: 23%;
   right: 10%;
   background-color: var(--White);
   width: 220px;

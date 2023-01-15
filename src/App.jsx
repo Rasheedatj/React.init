@@ -6,7 +6,6 @@ import sub_1 from "./pages/images/image-product-1-thumbnail.jpg";
 import sub_2 from "./pages/images/image-product-4-thumbnail.jpg";
 import sub_3 from "./pages/images/image-product-3-thumbnail.jpg";
 import sub_4 from "./pages/images/image-product-4-thumbnail.jpg";
-import LightGallery from "lightgallery/react";
 import "./App.css";
 
 function App() {
@@ -21,6 +20,7 @@ function App() {
         <div className="display-image">
           <img src={shoeOne} alt="" />
 
+          {/* <LightGallery plugins={[lgZoom, lgVideo]} mode="lg-fade"> */}
           <div className="sub-images">
             <a href={sub_1} className="bordered-img box">
               <div>
@@ -46,6 +46,7 @@ function App() {
               </div>
             </a>
           </div>
+          {/* </LightGallery> */}
         </div>
 
         {/* describtion section */}

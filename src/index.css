@@ -47,6 +47,7 @@ section {
   width: 23%;
   position: relative;
   cursor: pointer;
+  transition: all 150ms ease-in-out;
 }
 
 .sub-images .img-other::after {

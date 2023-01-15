@@ -35,6 +35,7 @@ nav li {
   line-height: 82px;
   display: inline-block;
   cursor: pointer;
+  z-index: 2;
 }
 
 .cart_avatar {
@@ -50,10 +51,14 @@ nav li {
 }
 
 .avatar {
-  border: 2px solid var(--orange);
   height: 2.2rem;
   width: 2.2rem;
   border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.avatar:hover {
+  border: 2px solid var(--orange);
 }
 
 nav li:hover {
@@ -130,6 +135,7 @@ nav li:hover {
   height: 25vh;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   animation: cart 500ms ease-in-out;
+  z-index: 2;
 }
 
 .cart-box.active {
@@ -167,12 +173,12 @@ nav li:hover {
 
 @keyframes cart {
   0% {
-    transform: translate(-50%, -10%);
+    transform: translate(-0%, -10%);
     opacity: 0;
   }
 
   100% {
-    transform: translate(-50%, 0);
+    transform: translate(-0%, 0);
     opacity: 1;
   }
 }
@@ -213,5 +219,17 @@ nav li:hover {
   .cart-modal h1 {
     font-size: 20px;
     padding: 2rem 2rem;
+  }
+
+  @keyframes cart {
+    0% {
+      transform: translate(-50%, -10%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
   }
 }

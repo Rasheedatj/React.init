@@ -45,6 +45,10 @@ nav li {
   justify-content: end;
 }
 
+.cart {
+  cursor: pointer;
+}
+
 .avatar {
   border: 2px solid var(--orange);
   height: 2.2rem;
@@ -86,6 +90,7 @@ nav li:hover {
   position: absolute;
   inset: 0 30% 0 0;
   background-color: var(--White);
+  animation: menu 500ms ease-in-out;
 }
 
 .close {
@@ -124,6 +129,7 @@ nav li:hover {
   width: 220px;
   height: 25vh;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  animation: cart 500ms ease-in-out;
 }
 
 .cart-box.active {
@@ -141,6 +147,34 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   height: 15vh;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0.7;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cart {
+  0% {
+    transform: translate(-50%, -10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -169,10 +203,10 @@ nav li:hover {
   .cart-modal {
     width: 95%;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 30vh;
+    height: 300px;
     border-radius: 15px;
   }
 
